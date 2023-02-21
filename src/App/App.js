@@ -1,8 +1,12 @@
-import React, { Component } from 'react';
+import React, { useEffect, useState } from 'react';
 import './App.css';
 
-class App extends Component {
-  render() {
+function App() {
+	const [reservations, setReservations] = useState([])
+
+	useEffect(() => {
+		setReservations()
+	}, [])
     return (
       <div className="App">
         <h1 className='app-title'>Turing Cafe Reservations</h1>
@@ -14,7 +18,6 @@ class App extends Component {
         </div>
       </div>
     )
-  }
 }
 
 export default App;
