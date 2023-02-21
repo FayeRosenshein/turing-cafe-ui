@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import './App.css';
-import Reservation from '../reservations/Reservation';
+import AllReservation from '../AllReservations/AllReservations';
 
 function App() {
 	const [reservations, setReservations] = useState([])
@@ -23,7 +23,7 @@ function App() {
 
 			</div>
 			<div className='resy-container'>
-				<Reservation reservation={reservations}/>
+				<AllReservation reservations={reservations}/>
 			</div>
 		</div>
 	)
